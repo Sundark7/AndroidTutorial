@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">A3&#8211;2_Layouts</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="linear_layout">Linear Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="table_layout">Table Layout</string>
+    <string name="account">Account:</string>
+    <string name="login">Login</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="your_name">Your Name</string>
+</resources>
