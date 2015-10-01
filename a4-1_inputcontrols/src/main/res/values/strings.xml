@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">A4-1_InputControls</string>
+    <string name="text_view">Text View</string>
+    <string name="edit_text">Edit Text</string>
+    <string name="image_view">Image View</string>
+    <string name="button">Button</string>
+    <string name="checkbox">Check Box</string>
+    <string name="radio_button">Radio Button</string>
+    <string name="datetime_picker">Date Time Picker</string>
+    <string name="progress_bar">Progress Bar</string>
+    <string name="seek_rating_bar">Seek Bar &#38; Rating Bar</string>
+</resources>

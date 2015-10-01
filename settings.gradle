@@ -1,1 +1,1 @@
-include ':app', ':a3-1_activitylifecycle', ':a3-2_layouts'
+include ':app', ':a3-1_activitylifecycle', ':a3-2_layouts', ':a4-1_inputcontrols'

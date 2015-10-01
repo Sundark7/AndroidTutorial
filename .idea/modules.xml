@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidTutorial.iml" filepath="$PROJECT_DIR$/AndroidTutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/a3-1_activitylifecycle/a3-1_activitylifecycle.iml" filepath="$PROJECT_DIR$/a3-1_activitylifecycle/a3-1_activitylifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a3-1_activitylifecycle/a3-1_activitylifecycle.iml" filepath="$PROJECT_DIR$/a3-1_activitylifecycle/a3-1_activitylifecycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/a3-2_layouts/a3-2_layouts.iml" filepath="$PROJECT_DIR$/a3-2_layouts/a3-2_layouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a3-2_layouts/a3-2_layouts.iml" filepath="$PROJECT_DIR$/a3-2_layouts/a3-2_layouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a4-1_inputcontrols/a4-1_inputcontrols.iml" filepath="$PROJECT_DIR$/a4-1_inputcontrols/a4-1_inputcontrols.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
