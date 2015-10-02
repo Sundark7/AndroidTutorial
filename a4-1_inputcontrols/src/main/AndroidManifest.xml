@@ -22,6 +22,7 @@
         <activity android:name=".ButtonActivity" />
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".RadioButtonActivity" />
+        <activity android:name=".DateTimePickerActivity" />
     </application>
 
 </manifest>
