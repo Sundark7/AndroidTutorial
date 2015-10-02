@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class InputControlActivity extends Activity {
-    private Button btn_textView, btn_editText, btn_imageView, btn_button, btn_checkBox, btn_radioButton, btn_datetimePicker, btn_progressBar;
+    private Button btn_textView, btn_editText, btn_imageView, btn_button, btn_checkBox, btn_radioButton, btn_datetimePicker, btn_progressBar, btn_seekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,8 @@ public class InputControlActivity extends Activity {
         btn_datetimePicker.setOnClickListener(listener);
         btn_progressBar = (Button) findViewById(R.id.btn_progressBar);
         btn_progressBar.setOnClickListener(listener);
+        btn_seekBar = (Button) findViewById(R.id.btn_seekBar);
+        btn_seekBar.setOnClickListener(listener);
     }
 
     class SelectActivity implements View.OnClickListener {
@@ -67,6 +69,10 @@ public class InputControlActivity extends Activity {
                     break;
                 case R.id.btn_progressBar:
                     intent.setClass(getApplicationContext(), ProgressBarActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_seekBar:
+                    intent.setClass(getApplicationContext(), SeekRatingBarActivity.class);
                     startActivity(intent);
                     break;
             }

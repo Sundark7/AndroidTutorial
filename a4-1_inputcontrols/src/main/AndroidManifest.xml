@@ -24,6 +24,7 @@
         <activity android:name=".RadioButtonActivity" />
         <activity android:name=".DateTimePickerActivity" />
         <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".SeekRatingBarActivity" />
     </application>
 
 </manifest>
