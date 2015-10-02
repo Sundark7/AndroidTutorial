@@ -23,7 +23,7 @@
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".RadioButtonActivity" />
         <activity android:name=".DateTimePickerActivity" />
-        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".ProgressbarActivity" />
         <activity android:name=".SeekRatingBarActivity" />
     </application>
 

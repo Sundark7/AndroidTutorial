@@ -68,7 +68,7 @@ public class InputControlActivity extends Activity {
                     startActivity(intent);
                     break;
                 case R.id.btn_progressBar:
-                    intent.setClass(getApplicationContext(), ProgressBarActivity.class);
+                    intent.setClass(getApplicationContext(), ProgressbarActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.btn_seekBar:
