@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class InputControlActivity extends Activity {
-    private Button btn_textView, btn_editText, btn_imageView;
+    private Button btn_textView, btn_editText, btn_imageView, btn_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,8 @@ public class InputControlActivity extends Activity {
         btn_editText.setOnClickListener(listener);
         btn_imageView = (Button) findViewById(R.id.btn_imageView);
         btn_imageView.setOnClickListener(listener);
+        btn_button = (Button) findViewById(R.id.btn_button);
+        btn_button.setOnClickListener(listener);
     }
 
     class SelectActivity implements View.OnClickListener {
@@ -37,6 +39,10 @@ public class InputControlActivity extends Activity {
                     break;
                 case R.id.btn_imageView:
                     intent.setClass(getApplicationContext(), ImageViewActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_button:
+                    intent.setClass(getApplicationContext(), ButtonActivity.class);
                     startActivity(intent);
                     break;
             }
