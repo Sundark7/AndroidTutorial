@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class InputControlActivity extends Activity {
-    private Button btn_textView, btn_editText, btn_imageView, btn_button;
+    private Button btn_textView, btn_editText, btn_imageView, btn_button, btn_checkBox, btn_radioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,10 @@ public class InputControlActivity extends Activity {
         btn_imageView.setOnClickListener(listener);
         btn_button = (Button) findViewById(R.id.btn_button);
         btn_button.setOnClickListener(listener);
+        btn_checkBox = (Button) findViewById(R.id.btn_checkBox);
+        btn_checkBox.setOnClickListener(listener);
+        btn_radioButton = (Button) findViewById(R.id.btn_radioButton);
+        btn_radioButton.setOnClickListener(listener);
     }
 
     class SelectActivity implements View.OnClickListener {
@@ -43,6 +47,14 @@ public class InputControlActivity extends Activity {
                     break;
                 case R.id.btn_button:
                     intent.setClass(getApplicationContext(), ButtonActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_checkBox:
+                    intent.setClass(getApplicationContext(), CheckBoxActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_radioButton:
+                    intent.setClass(getApplicationContext(), RadioButtonActivity.class);
                     startActivity(intent);
                     break;
             }
