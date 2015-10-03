@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_autoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AutoComplete TextView" />
+
+    <Button
+        android:id="@+id/btn_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GridView" />
+
+    <Button
+        android:id="@+id/btn_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Spinner" />
+
+    <Button
+        android:id="@+id/btn_expandableListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Expandable ListView" />
+</LinearLayout>

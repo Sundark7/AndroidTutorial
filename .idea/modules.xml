@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/a4-2_dialog/a4-2_dialog.iml" filepath="$PROJECT_DIR$/a4-2_dialog/a4-2_dialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/a4-3_scrollview/a4-3_scrollview.iml" filepath="$PROJECT_DIR$/a4-3_scrollview/a4-3_scrollview.iml" />
       <module fileurl="file://$PROJECT_DIR$/a4-4_listview/a4-4_listview.iml" filepath="$PROJECT_DIR$/a4-4_listview/a4-4_listview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a4-5_components/a4-5_components.iml" filepath="$PROJECT_DIR$/a4-5_components/a4-5_components.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
