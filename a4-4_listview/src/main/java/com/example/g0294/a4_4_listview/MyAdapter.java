@@ -21,6 +21,11 @@ public class MyAdapter extends BaseAdapter {
         this.mList = mList;
     }
 
+    public void updateData(List<CountryItem> items) {
+        mList = items;
+        //Triggers update
+        notifyDataSetChanged();
+    }
 
     @Override
     public int getCount() {
