@@ -17,6 +17,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btn_simpleAdapter = (Button) findViewById(R.id.btn_simpleAdapter);
         btn_baseAdapter = (Button) findViewById(R.id.btn_baseAdapter);
         btn_arrayAdapter.setOnClickListener(this);
+        btn_simpleAdapter.setOnClickListener(this);
+        btn_baseAdapter.setOnClickListener(this);
     }
 
     @Override
@@ -28,8 +30,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.btn_simpleAdapter:
+                intent.setClass(this, SimpleAdapterActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btn_baseAdapter:
+                intent.setClass(this, BaseAdapterActivity.class);
+                startActivity(intent);
                 break;
         }
     }

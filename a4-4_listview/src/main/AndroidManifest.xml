@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ArrayAdapterActivity" />
+        <activity android:name=".SimpleAdapterActivity"/>
+        <activity android:name=".BaseAdapterActivity"/>
     </application>
 
 </manifest>
