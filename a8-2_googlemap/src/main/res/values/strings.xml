@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">A8-2_Google Map</string>
+    <string name="Taipei101">台北101</string>
+    <string name="EDA">義大</string>
+    <string name="zoom_in">＋</string>
+    <string name="zoom_out">－</string>
+    <string name="title_activity_location">Map</string>
+    <string name="google_play_service_missing">沒有安裝Google Play服務</string>
+</resources>

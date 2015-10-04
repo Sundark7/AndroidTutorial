@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zoom_out" />
+
+    <Button
+        android:id="@id/zoom_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pos1"
+        android:layout_alignParentLeft="true"
+        android:text="@string/zoom_out" />
+
+    <SeekBar
+        android:id="@+id/map_zoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pos1"
+        android:layout_toLeftOf="@+id/tv_seek"
+        android:layout_toRightOf="@id/zoom_out"
+        android:max="18" />
+
+    <TextView
+        android:id="@id/tv_seek"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pos1"
+        android:layout_toLeftOf="@+id/zoom_in" />
+
+    <Button
+        android:id="@id/zoom_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pos1"
+        android:layout_alignParentRight="true"
+        android:text="@string/zoom_in" />
+
+    <Button
+        android:id="@id/pos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/Taipei101" />
+
+    <Button
+        android:id="@+id/pos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/pos1"
+        android:text="@string/EDA" />
+
+</RelativeLayout>
