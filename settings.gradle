@@ -1,1 +1,1 @@
-include ':app', ':a3-1_activitylifecycle', ':a3-2_layouts', ':a4-1_inputcontrols', ':a4-2_dialog', ':a4-3_scrollview', ':a4-4_listview', ':a4-5_components', ':a4-6_menus', ':a5-1_fragment', ':a5-2_multithread', ':a6-1_filesystem'
+include ':app', ':a3-1_activitylifecycle', ':a3-2_layouts', ':a4-1_inputcontrols', ':a4-2_dialog', ':a4-3_scrollview', ':a4-4_listview', ':a4-5_components', ':a4-6_menus', ':a5-1_fragment', ':a5-2_multithread', ':a6-1_filesystem', ':a6-2_sqlite'
