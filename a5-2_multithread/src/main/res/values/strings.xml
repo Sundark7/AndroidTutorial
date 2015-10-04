@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">A5-2_MultiThread</string>
+    <string name="title_activity_async_task">AsyncTaskActivity</string>
+</resources>
