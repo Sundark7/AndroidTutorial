@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/a7-1_broadcastreceiver/a7-1_broadcastreceiver.iml" filepath="$PROJECT_DIR$/a7-1_broadcastreceiver/a7-1_broadcastreceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/a7-2_notification/a7-2_notification.iml" filepath="$PROJECT_DIR$/a7-2_notification/a7-2_notification.iml" />
       <module fileurl="file://$PROJECT_DIR$/a7-3_googlecloudmessaging/a7-3_googlecloudmessaging.iml" filepath="$PROJECT_DIR$/a7-3_googlecloudmessaging/a7-3_googlecloudmessaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a8-1_service/a8-1_service.iml" filepath="$PROJECT_DIR$/a8-1_service/a8-1_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
