@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/a4-6_menus/a4-6_menus.iml" filepath="$PROJECT_DIR$/a4-6_menus/a4-6_menus.iml" />
       <module fileurl="file://$PROJECT_DIR$/a5-1_fragment/a5-1_fragment.iml" filepath="$PROJECT_DIR$/a5-1_fragment/a5-1_fragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/a5-2_multithread/a5-2_multithread.iml" filepath="$PROJECT_DIR$/a5-2_multithread/a5-2_multithread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a6-1_filesystem/a6-1_filesystem.iml" filepath="$PROJECT_DIR$/a6-1_filesystem/a6-1_filesystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
