@@ -24,6 +24,7 @@
             <option value="$PROJECT_DIR$/a6-2_sqlite" />
             <option value="$PROJECT_DIR$/a6-3_contentprovider" />
             <option value="$PROJECT_DIR$/a6-3_querycontentprovider" />
+            <option value="$PROJECT_DIR$/a7-1_broadcastreceiver" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
