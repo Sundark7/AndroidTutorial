@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">A6-2_SQLite</string>
+    <string name="hello_world">Hello world!</string>
 </resources>
