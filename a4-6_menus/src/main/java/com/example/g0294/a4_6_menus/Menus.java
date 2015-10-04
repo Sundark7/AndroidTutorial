@@ -1,10 +1,11 @@
 package com.example.g0294.a4_6_menus;
 
 import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.KeyEvent;
@@ -18,7 +19,8 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Menus extends Activity {
+public class Menus extends AppCompatActivity {
+
     final int MENU_COLOR_RED = 1;
     final int MENU_COLOR_GREEN = 2;
     final int MENU_COLOR_BLUE = 3;
@@ -28,29 +30,11 @@ public class Menus extends Activity {
     private String TAG = "Menus";
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_menus, menu);
-        // 取得my action Layout
-        myActionMenuItem = menu.findItem(R.id.my_action);
-        View actionView = myActionMenuItem.getActionView();
-        OnEditorListener editorListener = new OnEditorListener();
-        // Edit Text View of the my_action view
-        if (actionView != null) {
-            myActionEditText = (EditText) actionView.findViewById(R.id.myActionEditText);
-            if (myActionEditText != null) {
-                myActionEditText.setOnEditorActionListener(editorListener);
-            }
-        }
-        // return super.onCreateOptionsMenu(menu);
-        return true;
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menus);
         tvColor = (TextView) findViewById(R.id.tvColor);
-        ActionBar actionBar = getActionBar();
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayShowHomeEnabled(true);
             actionBar.setLogo(R.mipmap.ic_launcher);
@@ -62,6 +46,8 @@ public class Menus extends Activity {
         btn_secondActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Intent intent = new Intent(Menus.this, SecondActivity.class);
+                // startActivity(intent);
                 PopupMenu popupMenu = new PopupMenu(Menus.this, v);
                 popupMenu.inflate(R.menu.goactivity);
                 popupMenu.show();
@@ -85,16 +71,40 @@ public class Menus extends Activity {
         registerForContextMenu(tvColor);
     }
 
-    private void toggleActionBar() {
-        Log.d(TAG, "toggleActionBar ");
-        ActionBar actionBar = getActionBar();
-        if (actionBar != null) {
-            if (actionBar.isShowing()) {
-                actionBar.hide();
-            } else {
-                actionBar.show();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_menus, menu);
+
+        // 取得my action Layout
+        myActionMenuItem = menu.findItem(R.id.my_action);
+        View actionView = myActionMenuItem.getActionView();
+
+        OnEditorListener editorListener = new OnEditorListener();
+        // Edit Text View of the my_action view
+        if (actionView != null) {
+            myActionEditText = (EditText) actionView.findViewById(R.id.myActionEditText);
+            if (myActionEditText != null) {
+                myActionEditText.setOnEditorActionListener(editorListener);
             }
         }
+        MenuItemCompat.setOnActionExpandListener(myActionMenuItem,
+                new MenuItemCompat.OnActionExpandListener() {
+                    @Override
+                    public boolean onMenuItemActionExpand(MenuItem item) {
+                        if (myActionEditText != null) {
+                            myActionEditText.setText("");
+                        }
+                        return true;
+                    }
+
+                    @Override
+                    public boolean onMenuItemActionCollapse(MenuItem item) {
+                        return true;
+                    }
+                });
+        // return super.onCreateOptionsMenu(menu);
+        return true;
     }
 
     @Override
@@ -118,7 +128,16 @@ public class Menus extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
+        // //noinspection SimplifiableIfStatement
+        // if (id == R.id.action_settings) {
+        // return true;
+        // }
+        // return super.onOptionsItemSelected(item);
         Log.i(TAG, "Item ID: " + id);
         switch (id) {
             case R.id.action_search:
@@ -165,6 +184,18 @@ public class Menus extends Activity {
         return super.onTouchEvent(event);
     }
 
+    private void toggleActionBar() {
+        Log.d(TAG, "toggleActionBar ");
+        ActionBar actionBar = getActionBar();
+        if (actionBar != null) {
+            if (actionBar.isShowing()) {
+                actionBar.hide();
+            } else {
+                actionBar.show();
+            }
+        }
+    }
+
     class OnEditorListener implements TextView.OnEditorActionListener {
 
         @Override
@@ -175,6 +206,7 @@ public class Menus extends Activity {
                         && event.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
                     String textInput = v.getText().toString();
                     Toast.makeText(Menus.this, textInput, Toast.LENGTH_SHORT).show();
+                    MenuItemCompat.collapseActionView(myActionMenuItem);
                 }
             }
             return false;
