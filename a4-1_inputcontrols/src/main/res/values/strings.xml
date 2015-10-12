@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">A4-1_InputControls</string>
     <string name="text_view">Text View</string>
+    <string name="your_age">%1$s，出生於西元%2$d，現年%3$d歲。</string>
     <string name="edit_text">Edit Text</string>
     <string name="image_view">Image View</string>
     <string name="button">Button</string>

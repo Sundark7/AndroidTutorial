@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:text="Demo Text"
         android:gravity="center"
+        android:id="@+id/tvAge"
         android:textSize="18sp" />
 
     <TextView
