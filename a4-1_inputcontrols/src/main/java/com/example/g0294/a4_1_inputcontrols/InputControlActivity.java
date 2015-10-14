@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class InputControlActivity extends Activity {
   private Button btn_textView, btn_editText, btn_imageView, btn_button, btn_checkBox,
-      btn_radioButton, btn_datetimePicker, btn_progressBar, btn_seekBar;
+      btn_radioButton, btn_datetimePicker, btn_progressBar, btn_seekBar, btn_toast;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,8 @@ public class InputControlActivity extends Activity {
     btn_imageView.setOnClickListener(listener);
     btn_button = (Button) findViewById(R.id.btn_button);
     btn_button.setOnClickListener(listener);
+    btn_toast = (Button) findViewById(R.id.btn_toast);
+    btn_toast.setOnClickListener(listener);
     btn_checkBox = (Button) findViewById(R.id.btn_checkBox);
     btn_checkBox.setOnClickListener(listener);
     btn_radioButton = (Button) findViewById(R.id.btn_radioButton);
@@ -54,6 +56,10 @@ public class InputControlActivity extends Activity {
           break;
         case R.id.btn_button:
           intent.setClass(getApplicationContext(), ButtonActivity.class);
+          startActivity(intent);
+          break;
+        case R.id.btn_toast:
+          intent.setClass(getApplicationContext(), ToastActivity.class);
           startActivity(intent);
           break;
         case R.id.btn_checkBox:

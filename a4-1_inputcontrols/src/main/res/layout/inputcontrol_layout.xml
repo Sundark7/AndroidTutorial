@@ -29,11 +29,17 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btn_imageView"
+            android:id="@+id/btn_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/image_view" />
+            android:text="@string/button" />
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/toast" />
     </LinearLayout>
 
     <LinearLayout
@@ -41,11 +47,11 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btn_button"
+            android:id="@+id/btn_imageView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button" />
+            android:text="@string/image_view" />
     </LinearLayout>
 
     <LinearLayout
