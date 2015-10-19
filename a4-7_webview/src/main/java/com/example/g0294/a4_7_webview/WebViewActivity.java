@@ -81,8 +81,8 @@ public class WebViewActivity extends Activity {
       alertDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
         public void onClick(DialogInterface dialog, int which) {
           // Move to Next screen
-          Intent chnIntent = new Intent(WebViewActivity.this, AndroidViewActivity.class);
-          startActivity(chnIntent);
+          Intent intent = new Intent(WebViewActivity.this, AndroidViewActivity.class);
+          startActivity(intent);
         }
       });
       // Setting Negative "NO" Button
