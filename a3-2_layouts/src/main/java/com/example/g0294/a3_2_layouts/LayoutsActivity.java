@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class LayoutsActivity extends AppCompatActivity {
 
-  private Button btn_linear, btn_relative, btn_table;
+  private Button btn_linear, btn_relative, btn_table, btn_inflater;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +20,13 @@ public class LayoutsActivity extends AppCompatActivity {
     btn_linear = (Button) findViewById(R.id.linearLayout);
     btn_relative = (Button) findViewById(R.id.relativeLayout);
     btn_table = (Button) findViewById(R.id.tableLayout);
+    btn_inflater = (Button) findViewById(R.id.inflaterLayout);
 
     ButtonListener buttonListener = new ButtonListener();
     btn_linear.setOnClickListener(buttonListener);
     btn_relative.setOnClickListener(buttonListener);
     btn_table.setOnClickListener(buttonListener);
+    btn_inflater.setOnClickListener(buttonListener);
   }
 
   @Override
@@ -64,6 +66,10 @@ public class LayoutsActivity extends AppCompatActivity {
           break;
         case R.id.tableLayout:
           intent.setClass(getApplicationContext(), TableActivity.class);
+          startActivity(intent);
+          break;
+        case R.id.inflaterLayout:
+          intent.setClass(getApplicationContext(), LayoutInflaterActivity.class);
           startActivity(intent);
           break;
       }

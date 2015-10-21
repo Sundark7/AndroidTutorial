@@ -25,6 +25,7 @@
         <activity
             android:name=".TableActivity"
             android:label="@string/table_layout" />
+        <activity android:name=".LayoutInflaterActivity"/>
     </application>
 
 </manifest>
