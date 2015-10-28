@@ -16,10 +16,6 @@ public class Fragment1 extends Fragment {
 
     private final String TAG = "Fragment1";
 
-    public Fragment1() {
-        // Required empty public constructor
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
