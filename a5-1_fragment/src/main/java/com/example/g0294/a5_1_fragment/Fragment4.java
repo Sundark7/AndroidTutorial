@@ -1,8 +1,8 @@
 package com.example.g0294.a5_1_fragment;
 
 
-import android.app.Activity;
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,8 +27,8 @@ public class Fragment4 extends Fragment {
     }
 
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
+    public void onAttach(Context context) {
+        super.onAttach(context);
         Log.i(TAG, "-----Fragment4->>onAttach");
     }
 
